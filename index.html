@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FriendShip</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+        }
+        .button{
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+
+        }
+        .yes-button{
+            background-color: green;
+            color: white;
+        }
+        .no-button{
+            background-color: red;
+            color: white;
+        }
+
+        h1{
+            text-align: center;
+                    }
+        body{
+            background-color: pink;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Will You Be My Friend Forever Nyein?</h1>
+    <div class="container">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgVFhYYGBgYGBocGBgcGBgYGRgYGhgaGhgYGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QGhIRGjEhGCE0MTQ0MTQ0MTE0NDQ0NDE0NDQ0NDQ0PzQ0PzQ0NDQ0PzQ/ND80NDE0NDQ/PzQxMTExMf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAADAAIEBQYBB//EADwQAAIBAgMFBgMHAwIHAAAAAAECAAMRBCExBRJBUWEGEyJxgZGhsdEyQlJiweHwBxTxFZIjQ1NygqKy/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAIhEBAQEBAAIDAAIDAQAAAAAAAAERAhIhAzFBE1EEYXEy/9oADAMBAAIRAxEAPwCFhKe6gglO9U6CTmWw9JEwCZs0iqHrNYR9Jss5GY7z25Q9ZrDLUxCCMshbRwS1FIIz5yYhyznWEDjz/G4RkaxHkZY7GLMCDoJf7TwIddM5B2Zgyim+ucDOVrZQ6NA1UzhESSBkeafZGLyBGRGn0mXVZd4FjujQAcZXNKtHjdmpiV30IVwLdG8+R6zLYmg9Nt11Knrx8uc0GHrlSGF7S5CpXXddd4cPxKehl2aX0wYqQqvLvH9n2p3ZAXQkZ/eXzEjrsts7C+lvU2+Unxo1C7zIeV45KktRsZzYW1sPIcZMw3ZxtWNuWUrxpao0qQqVJqaWwqfO54mMr7ABzUyvFOs+tWFStLOl2dN/ERbP+e0KdgcjHNFsV+H2o6fZcjpqPYx+O2y9QAMcuQFgfOSG2E2WX7xtXYp4cBDC1UGtG1KwGXHif0El1cAUOl24X0H1MiV6RFr3z6Ze0VtVAHqxveQzYTXLSAfDkSLarHGqQTVJOwmx6lT7Km3M5D3l5hOzVNB4zvtyGSjp1hJaNZVFLGygk8gLy2wewKj5v4B119pp6FBEFkVVHQTtWsqi5NpWSfZK7DbGpJnbePNtPaQ9vbRCoUTjkbaATu0NqEghNOfOZjEksYr1/R4iu0ExhXSCZJOjAmMFvQrU4Pu4aMWONNkPWDw6WSEx+ZC9Y+uLJ6QJFwaXZjCVM3A5Q2BpWW8YiXcmKmbXOg4mPuBlOMLuOkBjCb2EAlOt5GqicwuKv4W1hKggpDZM49KceFhESQZqpJdMkgDl/LxiLJFNc5UmFVjh6hsM/nLPAVTz/wAyuw9awsM5Y7OpluFuo4y57pfi5p4pra+c4mvKNXDkZmPAtNEUZalp1cR4TAkXEYpsDFaQ9KtnC/3FpCRs46s4k6WDd8eceKptrK/veHT9Y5GJylSmsnrAyJWqm+UcizhQXlADvyciL8vnF/bo32l0OVjDPSHCDd7QDr4dNLZdI6jSpJmEF+ZzkR8VK+rtK5twitVzzaua+07Xle+1Tc6ADWVlTFknX6D95EqV1HhvvHkNPMmRemnPMW9Tax4ZSA9ctmTcwNNbi8cEkbo6yAVG4SMySYyRjJBKC1OCZJPZIJkgEF0g9yTHSD3IAPv0ap9oZdYXG1FyAI95iBh0/hMRw68Cf9xm38VY+T0GkQE1GkFRtYnmZh1pW++/+8/WOWmRo7j/AMofx0/KNlRF2JkXEv4zM0qONKjj1iKP/wBRveL+LoecapcMDnHsuUzSVao/5hirYyoouXJ9JN+PpfnGgQQyLMzhdoVGFw3uJKGOrDivtFPi6HnGhVZIppM4NoVwL2W2l+us0XZqq1VrObdAD84/46PKNBsrAK2bA6S9pqiCygCQ6uIVFtKmvtXWxlT0S8qYgQC4tZnn2gxMYcRccvrFaeNLWxahcjI1HEFhczMJiXuby8w1bwiTfZWLFasFUrZwXeWBPGV2JxVjGMWjVgNYbD4tTeZCvj2PGMTFuNDFOjxuDi1HH0jRiwTrMmmK5tLXCMCBnK1OYvRWHOcFUESCLgQVWrbl72laEyvh94fzOUeNobgJB01N7DyHpJaY7+Xh6yLVQ87WGdordVLjHPir5DSPoOL6eeZgNtUe7aw9v1kXA1zcHlOfq2XHVzN51r0pWAtyitJKC6g8wI1klxz37RWWCZZLdYJljwkVlgnWS3ECyxBEdILdkt1gtyBseHvbwr7R+5cfZW/lxk8YZeAEN/aLyE75HLqnGFc6BT6Gc/tH/AvxE0eHUqLKBaSVvxEMGssuFb8H/sY9MIT90/7pqAPyj2h6aLruiOdZ+Ff+squBH5vcR52YrCxZhNZ3a/gWL+3T8Hxlec/YzvPX5WXp7HVRYVPhKzFsyOVBDAcdJp9oUWQFgABwzmLrVSzEniZl31PyY045v7U2njHsE3Ra98jxtbjPSuyVNhR3ytr+/wAp5vsairOoY8RprPYKTKlMKPwi3tMrfTaRl9t46zEEmZzG7SC6NLPazXqa8ZSdocPurdRqMzMquIr9pWGQAPmOEkYfbLsjvZSqEArfx+LiBxtMwmstAlICkUZi5DCoLZDPwbh43ErxGtZsnHiqt9Layz7/AHTrlMjs+m1KsqsjJdPEGuLnPxAcOAmncXElS3oV94QGJw189YHCG0O7mBYrmwcibRqCkpJ1l4GmU26DUZgNEG8Rf0FucWDFf/rbEgADM5Xyz0j8N2pdGzQGx4H4gyqpIq1FLqSl1JGm8l+HnGbTqI1RzTXdQsd1fwrwHnK8Rre7P7To4AzB5HX95PbHBsrzAbHwDORa46dJq6VIJYC5MWjFkp9pNwtXdMrqL84VXhpC7b2Z3g311tnYD56zLdyUfdOo9pudnVwfCZJxtFN03Ue0XXM6Pnuz1UDZoPdJfl8OEORIuExXi3Gyt9ny5SYRFBQWWDZZIIgWgSOVgmWSWEEywNGdYIrJLiBKwDAYDHVGdV3tTymqQdPlM52Yw2+5b8ImsGF6/CdXNuMJICq+cMrfy0cuFPMe0d/at0+MraMU+L24Ecpu71uN45O0icVb5wOJ7N1GcvvLmb6QB7M1fymRb0nKtU7RU+TD0hk2/RP3iPMGULdn64+6PeBfY1cfcMXl0nKuNt7RV6ZKG4mM3pf7Yp93h0QizMbnnM5eHXtpzPS87PZ1FsbWIuSf2nqGLrZW1so+XCeXdnkLVUyB8Q18/Keg7TxBDEDlI69LjM7Vq2e/KOrWrILcBmOkLiKZeMo4Aqct4euUhpGVxmyWU3XTrw8oXAYF9bG/rN1hsNvCzLfzEmf2qDhDabL4ehUd9+ozMQLAsSbC8vtwAQr0gdNJGxT2EAJTe0eXvxkNKkMhi08TQMplMbh37wsB+4ORE1NF8o5KIvpETI1cLvhO/V2VLhQhUbqG5Ki/5rHykbFbOpOVFJHQD7Rdt5nvxItZc+pm9q4dbaXHESnxyXuAoAuOhj2liHh0Wml7gcP8SOuJ3nup+NpHxFIk2JNvPKPooq6DOMVa06vvJKvlnINFSZKAk6SVQr2YGWhxdxrKHehVqGEuEk4jmNRLmgQ6BugvKDvY/ZWLIcLewvHprp1gXkuqsjusRAlYBod1PKDdYKR3gYdxBWgbJ9nKqIh3msxPGaBMWh0dfeVeHKABTbLmJJRKbcE9p1T1GPpZpVU/eHvCqRzEqTgk13R6EyrLkMbb4A6mK9SD7+muUQlpjFxNQaO3vCptKsPvX9BI/lh+NbFRHETLU9s1hy9pOwW1nc7rKLWzMc75pXmz8ZXtjX3qwX8I+JlBeS9tV9+s7fmt7SFKwosNmVNx1fftum414Tf18Rvor67wF7TzOi9jpebzCVC1BCAVytnf9ZHU9Hz9iugOYNp2k5ECrtbOx9I0VbcJm1XFLFDnDmsDxlGMR/OEd3h52gFq1SUm0cT4rQ61SMryo2gu8/XhJquU6nWhxibaytw+IAyOoj2qFshrEvxXmBxF5YJUGszWCbdYZyc9c5i+UcqLF4cRlrItepfhf0lclfhePet1MpNR8ShLZKvtHJhxqV0hEAMIRFaKaqxMYt7lOWkh0CImICNMCrpaBpNY36whOUj1HtC0RstkY9KgCtqJbsEA+yJ5/szEhXBm3pVrgW5S+bsT1HRURuEjYlFtlYfCSmpA6ZGQsVTK6iVRFbWWAIkl1EjuM5K1Om6eUKtJdbCQHsCBa3OHVza97fKdWOdYBBHdyvKRqNcHW8loL6NFef8ARejDh05fCIYFDwElInPOGWmIeHP9D3/au/0tDB4nCLRR3HBT8pcdwOUoO2dfcw5A1ayiHhzPobf2vOiCxJ5km+mpvOoi8TfoPqYIxXj8T1NTEqugt1Gvqx/S03OyawfDqRqpIOUw2GwhtvuQicGbj/2KM2M2nZbEIVdUViBbxvxPRRp5ZmT3z6Vz9pABP1kWuhlniVJN7k29PgMhIlQ34fz9ZztlVcqbnTrDrUvwna9C/wCnWRN/dNuEAmXXrl+sBiHXSNapAuZOK5oDre5hsMbWz4fCD3CT+04aZHGGNN9LCmy24wiFbcZCpsYdWhIzqYjCdUX0g0ElILaiUmiU2t/LR4qKeJHp9IzuwRkZ1AV1APmLj3mdoP7vlmJy0eu6fyn3H1Ec1/vZ9f34wAZ5wYMe6RqJAG1DlIbSRXaAMYOQzS7ExmW6dRM0iyy2ZUswj5vsq1DYg8pJouCPEJCWoRnC0a4aaxm5jNnXzU+krnwD30MvEfhHEwxUrAd22WV4RKZIsVh6LbwB5yQqTfazQu6H4SPKGp0uhkxEhVWPypZAaIOn6SSg5zgEKohpYeBMH/UCvmiebH5TfLPL+2FQPiWufCoAA4nnb6x8zaVUFNC2g8ycgPM8JKXcpgNYO3C+nnbl569NZxCLBm0v4EAvc3+0R9dfhHpYXc2BvmzeI35dW6DTiZp4jTsPh3rPvuSBxY67t9EXj6CaPY+0KaOEB4WsPsqOROl+dvWZrE4olABcb+bG92ZQbIGPLU7oyzkam1szkOAvrJvG/Y8sr1Bqm+MjlyGkiskoOzm1STuNYDgB9Zp3WcXyceNdPPU6ivqiQ6tMcpaskjuknTxVvTHWOSiJLenG7kRhJSEJ3YtHrTjxTgegdyDnHUqAEN3fWd3IEfSA4QgIORyPPUfWCVIVUvrr85N6GHLTIz+IzH7Qoqc+MGtSxnSQc9Otv/peHpJB5HKdV/blBbhXy9wY8rxGsAc3Mf4gnYTga0DWflHoCdoPevExvFTGcYHprJNMWtBLCmVEr/CEOoBMt6WGAXKZXBYndOc0OCxl1sbfzhL5qbBzZdTGHFdR8JGqvv6SA+De8vcCvpIFsB7SSgmew3aXDtYl7HrlLjCbRpuQEcEnkRNdQnpHiJRHgREcohEEQEeiiOEbWO6pPITxvGOatZ2PF2N+QF8/aer9pK+5hqjflNvMzyKmPCSb2Jz62zsPM/KbfFz+o6vs8uPtcNBzIGiryAGp/wAQFWoW9NANAOQiqOWPpYAaAchGqM50TlF6Fr23jyXwgeQtbyygGJOsJWPibzPzjQsJyNPpVCrCxtbP1m72HtPvRu8QJgFF+M3v9Otn3dn1AHznP8/E8drT4+rq1cQLLLramDCneEqmWedY65UR0jd2SSkQhp4AqRwSECTu7EQQSJUhbRjGLTICcBjTO2kk5ePT+fvGgRwgWCK1vLiv6icI4r6jiPrOEwFSrxGRjlN2q49ZEL5/OJqgbz5c/LrGmIFDIINYVJUFTKQ0j2Fo2hHOCJUQCXs15c4SuCBbXlKSpC7PxW6fWOXA1eHwvEw+6IHBYrfAEfNJSeP4nspWB8AVhwzlj2Q2JUSuXqIVCqbdSZZUO2CH7dK3UGWOH7SYVtWZD1Bym3j71lq2VOscgOUBRx9Bh4ay+V5LpFTbdZTfrKLUmkOt4VFg6aHhJJG6uecWDWP/AKhVbUQl7bzC/kMzPNqz6AaAZD4k+ZM2H9RMQWqoh+6L288h+sxr6zt+Di+OseuvZkU7FabeFZ6c7XJPONEUUvxGuLrPVP6dJ/wWbrPLk1+uk9U7CEdwc75zi/ypnLb4vtdbUItKF2zl3jzcSjYTy67eXDOFYpxpK3NJwPOjSDcwGH3jSIBXMe7SQeQJwkQRaNDiLYMSQwg3eCLwJbWGkI1aBqvfMQZMSG384RaMdA4/zzjxn5/OcOUSwgFXnHpOAQlNZUKpdGFKC0HTjnfhLiEZ0kZcjJdWRrZwNbbOxBUg8OMv0qgi8yeGqZ2l2lbKXE2PNf8ATwdCRGPgGHGKKdTIxMKwIuMpOSoFNwXX1Pwiik2CJlDa9VbBax8jYyTT7aV0azBX9LRRRS+wods45sRVNVgASALcrf5lb3UUU7Pi+XrGPXENNKc3Iop1892/bLvmQtyN3Z2Kbs3FS51nqHYcjuOXOKKef/mfTp+D/wBLjGaSmqiKKeR07+QbzhadikLc3oxoooyR3E7vRRSDcjRFFAUNnjSYooqQZiUxRRGIuccIoo0iqJIpiKKVymjLOkRRS4RjpG7k5FAnUSxyh+96mKKMP//Z" width="200"/> 
+        <h2><b>Wil You Be My BestFriend?</b></h2>
+        <button class="button yes-button" id="yesButton">Yes</button>
+        <button class="button no-button" id="noButton">No</button>
+    </div>
+
+    <script>
+        const greenButton = document.getElementById('yesButton');
+        const redButton = document.getElementById('noButton');
+        let clickCount = 0;
+
+        const texts = [
+            "Are you sure?",
+            "Wanna think again?",
+            "I'm asking again.",
+            "Don't rush, please think it through"
+        ];
+
+        redButton.addEventListener('click', () => {
+            if (clickCount < texts.lengthn){
+                redButton.textContent = texts[clickCount];
+            }
+            clickCount++;
+
+            if (clickCount === 5) {
+                redButton.remove();
+                greenButton.textContent = "yes, I do. ❤️";
+            }else{
+                const currentSize = window.getComputedStyle(greenButton).
+                getPropertyValue('font-size');
+                const newSize = parseFloat(currentSize) * 1.5;
+                greenButton.style.fontSize = newSize + 'px' ;
+            }
+        });
+
+        greenButton.addEventListener('click', () => {
+            greenButton,innerHTML ='❤️';
+            redButton.remove();
+            greenButton.style.fontSize = "3em";
+        })
+    </script>
+    
+    
+</body>
+</html>
